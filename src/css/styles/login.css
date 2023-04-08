@@ -4,9 +4,13 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    background-image: url(/Assest/Img/Fondo2.jpg);
+    background-image: url(/assets/img-video/fondo.jpeg);
+    background-repeat: no-repeat;
+    
 }
+
 .section{
     display: flex;
     justify-content: center;
@@ -25,10 +29,27 @@ body {
     flex-direction: column;
     background: rgba(255,255,255,.5);
     box-shadow: 0 0 10px rgba(0,0,0,0.45);
-    backdrop-filter: blur(10px);
     border-radius: 17px;
     padding: 20px;
     border: none;   
+}
+
+@media (max-width:950px) {
+    body {
+        background-size: 250%;  
+    }
+}
+
+@media (max-width:360px) {
+    body {
+        background-size: 450%;  
+    }
+}
+
+@media (max-width:412px) {
+    body {
+        background-size: 450%;  
+    }
 }
 /* 
 @media screen and (min-width:300px)  {

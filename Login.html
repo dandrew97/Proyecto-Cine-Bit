@@ -10,11 +10,12 @@
 </head>
 
 <body>
+
     <div class="section">
         <Container class="Principal">
             <!-- Logo -->
             <div class="logo">
-                <img src="assets/img-video/logo.jpg" alt="Cine-Bit" width="100%" height="100%" />
+                <img src="assets/img-video/Isotipo.png" alt="Cine-Bit" width="100%" height="100%" />
             </div>
             <!-- Fomulario-login-->
             <form class="Formulario">
@@ -25,25 +26,28 @@
                 </div>
                 <!-- Inputs -->
                 <div class="inputs">
-                    <label for="input" class="label-input">Email</label>
-                    <input required type="email" class="input" name="input id="inputemail" placeholder="ingrese su Email">
+                    <label for="inputemail" class="label-input">Email</label>
+                    <input required type="email" class="input" id="inputemailLogin" placeholder="ingrese su Email">
                     </input>
+
                     <label  for="password" class="label-password">Contraseña</label>
-                    <input required type="password" class="input" id="inputpassword" placeholder="ingrese su contaseña">
+                    <input required type="password" class="input" id="inputpasswordLogin" placeholder="ingrese su contaseña">
                     </input>
                 </div>
                 <!-- botones-Registro -->
                 <div class="botones">
                     <div class="boton">
-                        <button type="button" id="Registrarse">Registrarse</button>
+                        <a class="btn" href="/pages/registrar.html">Registrarse</a>
                     </div>
                     <div class="boton">
-                        <button type="button" id="Iniciar-sesion">Iniciar sesion</button>
+                        <button type="submit" onclick="LoginInformacion()">Iniciar sesion</button>
                     </div>
                 </div>
             </form>
         </Container>
     </div>
+    <script type="text/javascript" src="/Src/Mainjs/Login.js"></script>
+    <script type="text/javascript" src="/Src/Mainjs/Registrar.js"></script>
 </body>
 
 </html>
